@@ -1,1 +1,1 @@
-# ResponsivePhotoGallery
+# Responsive Photo Gallery
