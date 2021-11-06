@@ -1,0 +1,141 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-image: linear-gradient(to right,rgb(204, 42, 242), rgb(74, 244, 188));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.photoGrid{
+    text-align: center;
+}
+
+.image{
+    width: 350px;
+    margin: 10px; /* distance between photos */
+    border: 1.2px solid;
+    border-radius: 5px;
+    border-color: white;
+    cursor: pointer;
+}
+.image:hover{
+    -ms-transform: scale(1.01); /* IE 9 */
+  -webkit-transform: scale(1.01); /* Safari 3-8 */
+  transform: scale(1.01); 
+}
+
+.hidden{
+    display: none;
+}
+.button{
+    background-color: coral;
+    border: 0ch;
+    width: 95px;
+    height: 30px;
+    font-weight: bold;
+    font-size: large;
+}
+.modal{
+    position: fixed;
+    width: 52%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.image-slide{ /* the big image from gallery*/
+    width: 100%;
+    border: 4px solid;
+    border-color: white;
+    border-radius: 5px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+  }
+
+  .close-modal {
+    position: absolute;
+    display: none;
+    top: 0.5rem;
+    margin-left: 46%;
+   border: none;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    background: none;
+  }
+
+  .previous-modal{
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  .next-modal{
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+    right: 1rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+.container{
+    width: 85%; /* you can modify the number of columns by adjusting the width percentage*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-title{
+    background-color: white;
+    width: 20%;
+    text-align: center;
+    border: 3px solid;
+    border-color: white;
+    border-radius: 25px;
+    margin: auto;
+}
+
+@media (max-width: 1050px) {
+    .modal{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container{
+        margin-left: auto;
+        margin-right: auto
+    }
+    .photoGrid{
+        margin-left: -20px;
+    }
+    .next-modal{
+        right: 0.1px;
+    }
+    .previous-modal{
+        left: 0.1px;
+    }
+}
