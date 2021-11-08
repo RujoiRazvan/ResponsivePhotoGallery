@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Photo Gallery using JavaScript</title>
+    <icon></icon>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid">
+        <div class="responsive">
+            <div class="gallery">
+                <img class="image" title="Peisaj" onclick="setIndex(1)" src="img/1.jpg">
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img class="image" title="GTR" onclick="setIndex(2)" src="img/2.jpg">
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img class="image" title="Pistol" onclick="setIndex(3)" src="img/3.jpg">
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img class="image" title="Mustang" onclick="setIndex(5)" src="img/4.jpg">
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img class="image" title="Tigru" onclick="setIndex(5)" src="img/5.jpg">
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img class="image" title="Peisaj ocean noapte" onclick="setIndex(6)" src="img/6.jpg">
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <img class="image" title="Ghetar noapte" onclick="setIndex(7)" src="img/7.jpg">
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img class="image" title="Apus mare" onclick="setIndex(8)" src="img/8.jpg">
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img class="image" title="Statiune ski" onclick="setIndex(9)" src="img/9.jpg">
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img class="image" title="Img 13" onclick="setIndex(10)" src="img/10.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="modal hidden">
+        <div class="modal-content">
+            <img class="image-slide" src="img/1.jpg">
+            <button class="close-modal">&times;</button>
+            <button class="previous-modal">&#5130;</button>
+            <button class="next-modal">&#5125;</button>
+            <div class="image-title">text</div>
+        </div>
+
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
